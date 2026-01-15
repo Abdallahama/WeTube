@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>WeTube</title>
+</head>
+<body>
+  <div id="all">
+    <div class="top">
+      <div class="icon">
+        <img src="wetube_logo.png" width="40px" height="35px" class="wetube_logo" />
+        <h3>WeTube</h3>
+      </div>
+      <div class="search">
+        <input oninput="searchFunction()" type="search" placeholder="اكتب اسم
+   القارئ..." class="inputSearch" id="nSearch">
+        <input list="qs" oninput="searchFunction()" type="search" placeholder="اكتب اسم السوره..." class="inputSearch" id="qSearch">
+        <datalist id="qs">
+          <option>الفاتحه</option>
+          <option>البقره</option>
+          <option>ال عمران</option>
+          <option>النساء</option>
+          <option>المائدة</option>
+          <option>الانعام</option>
+          <option>الاعراف</option>
+          <option>الانفال</option>
+          <option>التوبة</option>
+          <option>يونس</option>
+          <option>هود</option>
+          <option>يوسف</option>
+          <option>الرعد</option>
+          <option>ابراهيم</option>
+          <option>الحجر</option>
+          <option>النحل</option>
+          <option>الاسراء</option>
+          <option>الكهف</option>
+          <option>مريم</option>
+          <option>طه</option>
+          <option>الانبياء</option>
+          <option>الحج</option>
+          <option>المؤمنون</option>
+          <option>النور</option>
+          <option>الفرقان</option>
+          <option>الشعراء</option>
+          <option>النمل</option>
+          <option>القصص</option>
+          <option>العنكبوت</option>
+          <option>الروم</option>
+          <option>لقمان</option>
+          <option>السجدة</option>
+          <option>الاحزاب</option>
+          <option>سبإ</option>
+          <option>فاطر</option>
+          <option>يس</option>
+          <option>الصافات</option>
+          <option>ص</option>
+          <option>الزمر</option>
+          <option>غافر</option>
+          <option>فصلت</option>
+          <option>الشورى</option>
+          <option>الزخرف</option>
+          <option>الدخان</option>
+          <option>الجاثية</option>
+          <option>الاحقاف</option>
+          <option>محمد</option>
+          <option>الفتح</option>
+          <option>الحجرات</option>
+          <option>ق</option>
+          <option>الذاريات</option>
+          <option>الطور</option>
+          <option>النجم</option>
+          <option>القمر</option>
+          <option>الرحمن</option>
+          <option>الواقعة</option>
+          <option>الحديد</option>
+          <option>المجادلة</option>
+          <option>الحشر</option>
+          <option>الممتحنة</option>
+          <option>الصف</option>
+          <option>الجمعة</option>
+          <option>المنافقون</option>
+          <option>التغابن</option>
+          <option>الطلاق</option>
+          <option>التحريم</option>
+          <option>الملك</option>
+          <option>القلم</option>
+          <option>الحاقة</option>
+          <option>المعارج</option>
+          <option>نوح</option>
+          <option>الجن</option>
+          <option>المزمل</option>
+          <option>المدثر</option>
+          <option>القيامة</option>
+          <option>الانسان</option>
+          <option>المرسلات</option>
+          <option>النبإ</option>
+          <option>النازعات</option>
+          <option>عبس</option>
+          <option>التكوير</option>
+          <option>الانفطار</option>
+          <option>المطففين</option>
+          <option>الانشقاق</option>
+          <option>البروج</option>
+          <option>الطارق</option>
+          <option>الاعلى</option>
+          <option>الغاشية</option>
+          <option>الفجر</option>
+          <option>البلد</option>
+          <option>الشمس</option>
+          <option>الليل</option>
+          <option>الضحى</option>
+          <option>الشرح</option>
+          <option>التين</option>
+          <option>العلق</option>
+          <option>القدر</option>
+          <option>البينة</option>
+          <option>الزلزلة</option>
+          <option>العاديات</option>
+          <option>القارعة</option>
+          <option>التكاثر</option>
+          <option>العصر</option>
+          <option>الهمزة</option>
+          <option>الفيل</option>
+          <option>قريش</option>
+          <option>الماعون</option>
+          <option>الكوثر</option>
+          <option>الكافرون</option>
+          <option>النصر</option>
+          <option>المسد</option>
+          <option>الاخلاص</option>
+          <option>الفلق</option>
+          <option>الناس</option>
+        </datalist>
+      </div>
+    </div>
+    <div class="allVidoe">
+      <div class="audioItem">
+        <img src="images (2).jpeg" class="photo" />
+        <div class="controls">
+          <a href="i.mp3" download><span class="material-icons">download</span></a>
+          <div class="controlsItem">
+            <h4 id="nse">محمد اللحيدان</h4>
+            <h4 style="color: blue;">: القارئ</h4>
+            <h4 id="qse">المؤمنون</h4>
+            <h4 style="color: blue;">:سورة</h4>
+          </div>
+          <input type="range" value="0" step="0.1" class="range" />
+          <div class="dur_cur">
+            <span class="current">0:00</span>
+            <span class="duration"></span>
+          </div>
+          <audio src="i.mp3" class="audio"></audio>
+          <div class="controlsItem">
+            <span class="replay material-icons">replay_5</span>
+            <span class="play material-icons">play_arrow</span>
+            <span class="pause material-icons">pause</span>
+            <span class="forward material-icons">forward_5</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="audioItem">
+        <img src="images (4).jpeg" class="photo" />
+        <div class="controls">
+          <a href="سوره الفاتحه القارئ الشيخ محمد اللحيدان.mp3" download><span class="material-icons">download</span></a>
+          <div class="controlsItem">
+            <h4 id="nse">محمد الليحدان</h4>
+            <h4 style="color: blue;">: القارئ</h4>
+            <h4 id="qse">الفاتحه</h4>
+            <h4 style="color: blue;">:سورة</h4>
+          </div>
+          <input type="range" value="0" step="0.1" class="range" />
+          <div class="dur_cur">
+            <span class="current">0:00</span>
+            <span class="duration"></span>
+          </div>
+          <audio src="سوره الفاتحه القارئ الشيخ محمد اللحيدان.mp3" class="audio"></audio>
+          <div class="controlsItem">
+            <span class="replay material-icons">replay_5</span>
+            <span class="play material-icons">play_arrow</span>
+            <span class="pause material-icons">pause</span>
+            <span class="forward material-icons">forward_5</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="audioItem">
+        <img src="img.jpg" class="photo" />
+        <div class="controls">
+          <a href="i.mp3" download><span class="material-icons">download</span></a>
+          <div class="controlsItem">
+            <h4 id="nse">محمد الليحدان</h4>
+            <h4 style="color: blue;">: القارئ</h4>
+            <h4 id="qse">المؤمنون</h4>
+            <h4 style="color: blue;">:سورة</h4>
+          </div>
+          <input type="range" value="0" step="0.1" class="range" />
+          <div class="dur_cur">
+            <span class="current">0:00</span>
+            <span class="duration"></span>
+          </div>
+          <audio src="i.mp3" class="audio"></audio>
+          <div class="controlsItem">
+            <span class="replay material-icons">replay_5</span>
+            <span class="play material-icons">play_arrow</span>
+            <span class="pause material-icons">pause</span>
+            <span class="forward material-icons">forward_5</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="audioItem">
+        <img src="img.jpg" class="photo" />
+        <div class="controls">
+          <a href="i.mp3" download><span class="material-icons">download</span></a>
+          <div class="controlsItem">
+            <h4 id="nse">محمد الليحدان</h4>
+            <h4 style="color: blue;">: القارئ</h4>
+            <h4 id="qse">المؤمنون</h4>
+            <h4 style="color: blue;">:سورة</h4>
+          </div>
+          <input type="range" value="0" step="0.1" class="range" />
+          <div class="dur_cur">
+            <span class="current">0:00</span>
+            <span class="duration"></span>
+          </div>
+          <audio src="i.mp3" class="audio"></audio>
+          <div class="controlsItem">
+            <span class="replay material-icons">replay_5</span>
+            <span class="play material-icons">play_arrow</span>
+            <span class="pause material-icons">pause</span>
+            <span class="forward material-icons">forward_5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span class="material-icons" id="search" onclick="searchColor()">search</span>
+      <span class="material-icons" id="home" onclick="homeColor()">home</span>
+    </div>
+  </div>
+  <div id="loading"></div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
