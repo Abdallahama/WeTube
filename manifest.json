@@ -7,7 +7,6 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "wetubeس.png",
       "src": "o.png",
       "sizes": "192x192",
       "type": "image/png"
